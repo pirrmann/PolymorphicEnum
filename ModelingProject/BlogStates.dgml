@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" Layout="Sugiyama" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="Step1" Category="Category1" Bounds="-3.42857751028878,3.5527136788005E-14,53.5266666666667,25.96" Label="Step 1">
+      <Category Ref="Category2" />
+    </Node>
+    <Node Id="Step2" Category="Category1" Bounds="84.0980891563779,-4.57763658090471E-07,53.5266666666667,25.96" Label="Step 2">
+      <Category Ref="Category2" />
+    </Node>
+    <Node Id="Step3" Category="Category1" Bounds="167.624755823045,-4.57763665195898E-07,53.5266666666667,25.96" Label="Step 3">
+      <Category Ref="Category2" />
+    </Node>
+    <Node Id="Step4" Category="Category1" Bounds="251.151422489711,1.44958495695846E-06,53.5266666666666,25.96" Label="Step 4">
+      <Category Ref="Category2" />
+    </Node>
+    <Node Id="Step5" Category="Category1" Bounds="334.678089156378,-4.57763672301326E-07,53.5266666666666,25.96" Label="Step 5">
+      <Category Ref="Category2" />
+    </Node>
+    <Node Id="Step6" Category="Category1" Bounds="418.204755823045,1.44958495695846E-06,53.5266666666666,25.96" Label="Step 6">
+      <Category Ref="Category2" />
+    </Node>
+    <Node Id="Step7" Category="Category1" Bounds="501.731422489711,-4.57763675854039E-07,53.5266666666666,25.96" Label="Step 7" />
+  </Nodes>
+  <Links>
+    <Link Source="Step1" Target="Step2" Bounds="50.0980891563779,12.9799995939174,24.9999971880231,1.96124654294749E-07" />
+    <Link Source="Step2" Target="Step3" Bounds="137.624755823045,12.9799995422363,21,3.5527136788005E-15" />
+    <Link Source="Step3" Target="Step4" Bounds="221.151422489711,12.9800001533826,21,4.79539323805511E-07" />
+    <Link Source="Step4" Target="Step5" Bounds="304.678089156378,12.9800003588994,21,4.79539323805511E-07" />
+    <Link Source="Step5" Target="Step6" Bounds="388.204755823045,12.9800001533826,21.0000000000001,4.79539323805511E-07" />
+    <Link Source="Step6" Target="Step7" Bounds="471.731422489711,12.9800003588994,21.0000000000001,4.79539323805511E-07" />
+  </Links>
+  <Categories>
+    <Category Id="Category1" Label="Current" Background="#FFFF7F7F" IsTag="True" />
+    <Category Id="Category2" Label="Catégorie 2" Background="#FF7DC633" IsTag="True" />
+  </Categories>
+  <Properties>
+    <Property Id="Background" Label="Arrière-plan" Description="Couleur d'arrière-plan" DataType="System.Windows.Media.Brush" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GraphDirection" DataType="Microsoft.VisualStudio.Diagrams.Layout.LayoutOrientation" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsTag" DataType="System.Boolean" />
+    <Property Id="Label" Label="Étiquette" Description="Étiquette affichable d'un objet pouvant être annoté" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Catégorie 2" ValueLabel="A la catégorie">
+      <Condition Expression="HasCategory('Category2')" />
+      <Setter Property="Background" Value="#FF7DC633" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Catégorie 1" ValueLabel="A la catégorie">
+      <Condition Expression="HasCategory('Category1')" />
+      <Setter Property="Background" Value="#FFFF7F7F" />
+    </Style>
+  </Styles>
+</DirectedGraph>

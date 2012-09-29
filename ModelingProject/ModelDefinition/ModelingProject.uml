@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="e34edbea-f3df-479c-9a1a-af9940088b80"
+  name="ModelingProject" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="cd37aef2-fe6c-46a8-8b7b-d578699f82bb"
+        name="PolymorphicEnum&lt;int, Gesture&gt;"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="930a32f9-b215-441b-b881-cb8f2e3bd920"
+        name="Gesture"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="7a65955a-8aed-41e5-bc48-5da270b61bf0"
+            isSubstitutable="false">
+            <classMoniker
+              Id="cd37aef2-fe6c-46a8-8b7b-d578699f82bb"
+              LastKnownName="PolymorphicEnum&lt;int, Gesture&gt;"
+              LastKnownLocation="ModelingProject.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="533ecd3c-0bee-46cd-91fe-6cf30fb5471a"
+        name="RockGesture"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="024b5ed4-6dad-4d45-9890-7f9b64ef3b19"
+            isSubstitutable="false">
+            <classMoniker
+              Id="930a32f9-b215-441b-b881-cb8f2e3bd920"
+              LastKnownName="Gesture"
+              LastKnownLocation="ModelingProject.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3aeca9e4-e87a-454f-8d5a-be6f490ed8bb"
+        name="Poly"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8a4abc84-0639-4a18-94e8-0597fafe1747"
+        name="PolymorphicEnum&lt;int, SomeEnum&gt;"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="615a4c36-6aa3-45b0-a9f2-39e23f5d74f8"
+            name="Register"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e9352e7f-41ba-47c6-8bb6-f4871ecf0f9d"
+                  direction="Return">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="a2a33377-2315-40f4-b84e-0a0e17d35e3a"
+                      LastKnownName="SomeEnum"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="a2a33377-2315-40f4-b84e-0a0e17d35e3a"
+        name="SomeEnum" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b80dbaad-5e18-4554-b6ba-6f664292cc40"
+        name="SomeEnum"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="1cf04435-b937-4e7b-93e9-9ba1b645d0a1"
+            isSubstitutable="false">
+            <classMoniker
+              Id="8a4abc84-0639-4a18-94e8-0597fafe1747"
+              LastKnownName="PolymorphicEnum&lt;int, SomeEnum&gt;"
+              LastKnownLocation="ModelingProject.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="56941719-2c2f-4f86-ad44-e16220add6a2"
+        name="OtherEnum"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="81077159-7cc9-4c30-941d-0e6828bc3c41"
+            isSubstitutable="false">
+            <classMoniker
+              Id="8a4abc84-0639-4a18-94e8-0597fafe1747"
+              LastKnownName="PolymorphicEnum&lt;int, SomeEnum&gt;"
+              LastKnownLocation="ModelingProject.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3bc0ee33-f896-4839-9ca6-bd558c1db07f"
+        name="OtherChildEnum"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="64f3ba67-043c-4c5a-8a40-726b9f0ec35a"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b80dbaad-5e18-4554-b6ba-6f664292cc40"
+              LastKnownName="SomeEnum"
+              LastKnownLocation="ModelingProject.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

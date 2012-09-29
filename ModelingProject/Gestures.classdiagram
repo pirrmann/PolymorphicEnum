@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="7407adab-39d8-4f0e-bc2d-595dce18dd6b" name="Gestures" linkedPackageId="deefda3e-d215-47fb-a18d-20654d468d4c" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="fbdb508a-fb6f-4cd8-975e-bd069b19b5b9">
+      <profileInstance Id="405d3c32-b448-4022-b682-929f559a69b4" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="942a722e-6ba0-4a42-9fbc-1d89d8df3e16">
+      <profileInstance Id="3dedca1c-5069-4a38-a8cb-b89b85c326ee" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8be00b5e-00de-4b9a-9f23-18975b2101aa" name="PolymorphicEnum&lt;int, Gesture&gt;" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cd37aef2-fe6c-46a8-8b7b-d578699f82bb" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="25a95ed8-9092-455a-96d1-8f248a1535bd" name="Gesture" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="930a32f9-b215-441b-b881-cb8f2e3bd920" />
+        <generalsInternal>
+          <generalization Id="e31cb247-a5da-4163-890c-13b00a4b6aa3" isSubstitutable="false">
+            <classMoniker Id="8be00b5e-00de-4b9a-9f23-18975b2101aa" LastKnownName="PolymorphicEnum&lt;int, Gesture&gt;" />
+            <elementDefinition Id="7a65955a-8aed-41e5-bc48-5da270b61bf0" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5360c49c-3e53-4af5-9907-c9013ad6a6e8" name="RockGesture" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="533ecd3c-0bee-46cd-91fe-6cf30fb5471a" />
+        <generalsInternal>
+          <generalization Id="3a921d9b-6b7c-4733-84cc-9490f7d9fb05" isSubstitutable="false">
+            <classMoniker Id="25a95ed8-9092-455a-96d1-8f248a1535bd" LastKnownName="Gesture" />
+            <elementDefinition Id="024b5ed4-6dad-4d45-9890-7f9b64ef3b19" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="deefda3e-d215-47fb-a18d-20654d468d4c" name="ModelingProject">
+    <elementDefinition Id="e34edbea-f3df-479c-9a1a-af9940088b80" />
+  </package>
+</logicalClassDesignerModel>

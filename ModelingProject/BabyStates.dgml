@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="BottomToTop" Layout="Sugiyama" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="CRY" Bounds="56.4416666666667,172.9425,50,25.96" />
+    <Node Id="EAT" Bounds="56.4416666666667,115.295,50,25.96" />
+    <Node Id="POOP" Bounds="55.675,0,51.5333333333333,25.96" />
+    <Node Id="SLEEP" Bounds="0,57.6475,50.8833333333333,25.96" />
+  </Nodes>
+  <Links>
+    <Link Source="CRY" Target="EAT" Bounds="52.1916656494141,147.015655517578,11.6874008178711,25.9268493652344" />
+    <Link Source="EAT" Target="CRY" Bounds="99.004264831543,141.255004882813,11.6874008178711,25.9268493652344" />
+    <Link Source="EAT" Target="SLEEP" Bounds="42.6547584533691,90.3556671142578,24.8268928527832,24.9393310546875" />
+    <Link Source="POOP" Target="CRY" Bounds="107.207809448242,23.0161724090576,48.2338562011719,149.902025222778" />
+    <Link Source="POOP" Target="EAT" Bounds="81.4416656494141,25.9599990844727,0,80.3349990844727" />
+    <Link Source="SLEEP" Target="CRY" Bounds="7.44166660308838,83.6074981689453,40.6137189865112,89.3106994628906" />
+    <Link Source="SLEEP" Target="POOP" Bounds="36.2494201660156,32.0348587036133,24.1414184570313,25.6126403808594" />
+  </Links>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="GraphDirection" DataType="Microsoft.VisualStudio.Diagrams.Layout.LayoutOrientation" />
+    <Property Id="Layout" DataType="System.String" />
+  </Properties>
+</DirectedGraph>

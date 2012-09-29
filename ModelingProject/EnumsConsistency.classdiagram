@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="d7826afe-5f02-46dd-a611-653732313970" name="EnumsConsistency" linkedPackageId="7c9de965-d1d7-4c20-b9fb-09ec239dfb5e" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="6ba94e3c-d1bd-40c6-b27a-3782c5f298b0">
+      <profileInstance Id="c26a0552-4fbb-42ed-a234-df40d96f7018" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="3020e9b8-fd41-429d-91e1-425356b7d58c">
+      <profileInstance Id="441fe6d6-8dad-4c0f-9baf-3f28f03cc9c6" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6fcd3510-527d-4faf-93ab-abd7471dc5bc" name="PolymorphicEnum&lt;int, SomeEnum&gt;" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8a4abc84-0639-4a18-94e8-0597fafe1747" />
+        <ownedOperationsInternal>
+          <operation Id="6e35a568-ff81-401d-96be-6e5cc945adff" name="Register" visibility="Protected" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="615a4c36-6aa3-45b0-a9f2-39e23f5d74f8" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7e198219-7ad3-40e8-bc8f-a1e44cac5cdb" direction="Return">
+                  <elementDefinition Id="e9352e7f-41ba-47c6-8bb6-f4871ecf0f9d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="7c865ed8-5ff4-4e23-a555-59be46943959" LastKnownName="SomeEnum" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="7c865ed8-5ff4-4e23-a555-59be46943959" name="SomeEnum" isAbstract="false" isLeaf="false" cachedFullName="SomeEnum">
+        <elementDefinition Id="a2a33377-2315-40f4-b84e-0a0e17d35e3a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9adde04f-61f3-474e-8f51-503bbbfe0543" name="SomeEnum" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b80dbaad-5e18-4554-b6ba-6f664292cc40" />
+        <generalsInternal>
+          <generalization Id="22971930-83b9-48e8-9cc0-11cfe58e3919" isSubstitutable="false">
+            <classMoniker Id="6fcd3510-527d-4faf-93ab-abd7471dc5bc" LastKnownName="PolymorphicEnum&lt;int, SomeEnum&gt;" />
+            <elementDefinition Id="1cf04435-b937-4e7b-93e9-9ba1b645d0a1" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="01e45cec-c434-42ab-a3a6-038699ff12bc" name="OtherEnum" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="56941719-2c2f-4f86-ad44-e16220add6a2" />
+        <generalsInternal>
+          <generalization Id="5eff3f22-e296-4905-903f-a4f8c0375469" isSubstitutable="false">
+            <classMoniker Id="6fcd3510-527d-4faf-93ab-abd7471dc5bc" LastKnownName="PolymorphicEnum&lt;int, SomeEnum&gt;" />
+            <elementDefinition Id="81077159-7cc9-4c30-941d-0e6828bc3c41" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a38ee71f-0fce-4b63-a70a-68e6d1965345" name="OtherChildEnum" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3bc0ee33-f896-4839-9ca6-bd558c1db07f" />
+        <generalsInternal>
+          <generalization Id="29bd5b45-9abe-499d-8777-c646288941f7" isSubstitutable="false">
+            <classMoniker Id="9adde04f-61f3-474e-8f51-503bbbfe0543" LastKnownName="SomeEnum" />
+            <elementDefinition Id="64f3ba67-043c-4c5a-8a40-726b9f0ec35a" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="7c9de965-d1d7-4c20-b9fb-09ec239dfb5e" name="ModelingProject">
+    <elementDefinition Id="e34edbea-f3df-479c-9a1a-af9940088b80" />
+  </package>
+</logicalClassDesignerModel>
