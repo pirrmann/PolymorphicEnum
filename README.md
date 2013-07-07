@@ -1,4 +1,4 @@
-# Linq to Service 
+# Polymorphic Enum
 An implementation of a polymorphic enum, documented in several blog posts, starting with http://www.pirrmann.net/polymorphic-enums-in-c-sharp/
 
 ## What can it be used for?
